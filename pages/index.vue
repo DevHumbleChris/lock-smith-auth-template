@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <div>Hello World</div>
+  <div class="text-red-200  font-bold">Hello World</div>
 </template>
