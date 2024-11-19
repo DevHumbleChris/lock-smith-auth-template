@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "lock-smith-auth-template",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,12 +7,52 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@antfu/eslint-config": "^3.9.2",
+    "eslint-plugin-format": "^0.1.2",
+    "eslint-plugin-tailwindcss": "^3.17.5",
     "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+  "packageManager": "pnpm@9.13.2",
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/config-inspector": "^0.5.6",
+    "@release-it/conventional-changelog": "^9.0.3",
+    "eslint": "^9.15.0",
+    "husky": "^9.1.7",
+    "release-it": "^17.10.0",
+    "typescript": "^5.6.3"
+  },
+  "version": "1.0.0",
+  "description": "A Nuxt template featuring robust authentication: email/password login, HaveIBeenPwned checks, passkey sign-in, email verification, 2FA (TOTP, recovery codes, passkeys), and password reset with 2FA.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevHumbleChris/lock-smith-auth-template.git"
+  },
+  "keywords": [
+    "auth",
+    "lucia-auth",
+    "nuxt-auth",
+    "nuxt",
+    "tailwindcss",
+    "drizzle",
+    "drizzle-orm",
+    "shadcnui",
+    "shadcn-vue",
+    "postgresql",
+    "drizzle-kit"
+  ],
+  "author": "thecodingmontana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevHumbleChris/lock-smith-auth-template/issues"
+  },
+  "homepage": "https://github.com/DevHumbleChris/lock-smith-auth-template#readme"
 }
